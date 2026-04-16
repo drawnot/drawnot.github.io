@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands | Drawnot Bot</title>
+    <meta name="description" content="Explore the diverse and powerful commands of Drawnot Discord bot.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .commands-hero {
+            padding: 160px 0 60px;
+            text-align: center;
+        }
+
+        .commands-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .commands-hero p {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .commands-category {
+            margin-bottom: 4rem;
+        }
+
+        .category-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .category-title i {
+            color: var(--accent-color);
+        }
+
+        .command-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .command-item {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .command-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(157, 78, 221, 0.5);
+            box-shadow: 0 5px 15px rgba(157, 78, 221, 0.1);
+        }
+
+        .cmd-name {
+            font-weight: 700;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            background: rgba(157, 78, 221, 0.1);
+            padding: 0.2rem 0.8rem;
+            border-radius: 6px;
+        }
+
+        .cmd-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="index.html" class="logo">DRAW<span>NOT</span></a>
+            <nav id="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="commands.html" style="color: var(--text-main);">Commands</a>
+                <a href="index.html#support">Support</a>
+            </nav>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1487855804693479557&permissions=8&scope=bot%20applications.commands"
+                class="btn-invite" target="_blank">Invite Bot</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container commands-hero">
+            <h1>Bot <span>Commands</span></h1>
+            <p>Master the Ghost of the Machine with our comprehensive command list.</p>
+        </section>
+
+        <section class="container">
+
+            <div class="commands-category">
+                <h2 class="category-title"><i class="fas fa-hammer"></i> System & Admin</h2>
+                <div class="command-list">
+
+
+                    <div class="command-item">
+                        <div class="cmd-name">/audit</div>
+                        <div class="cmd-desc">Audit log settings.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/language</div>
+                        <div class="cmd-desc">Set the bot language for this server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/reddit</div>
+                        <div class="cmd-desc">Manage Reddit feed notifications.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/settings-automod</div>
+                        <div class="cmd-desc">Configures Auto-Mod settings (Anti-Swear, Anti-Link, Anti-Spam).</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/settings-autorole</div>
+                        <div class="cmd-desc">Sets an auto-role to be given when a new member joins.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/settings-swearwords</div>
+                        <div class="cmd-desc">Add or remove custom swear words for the Anti-Swear module.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/ticket-setup</div>
+                        <div class="cmd-desc">Sets up the ticket system panel in the specified channel.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commands-category">
+                <h2 class="category-title"><i class="fas fa-gamepad"></i> Fun & Minigames</h2>
+                <div class="command-list">
+
+                    <div class="command-item">
+                        <div class="cmd-name">/big-quote</div>
+                        <div class="cmd-desc">Slam your fist on the table and make a big statement!</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/blackjack</div>
+                        <div class="cmd-desc">Play Blackjack with a bet!</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/bomb-devil</div>
+                        <div class="cmd-desc">Sends random gallery images.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/boom</div>
+                        <div class="cmd-desc">Bomb someone! 💣</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/coin-flip</div>
+                        <div class="cmd-desc">Flip a coin with a bet!</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/confess</div>
+                        <div class="cmd-desc">Sends a completely anonymous confession to the server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/crash</div>
+                        <div class="cmd-desc">Play a crypto-crash like betting game!</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/divorce</div>
+                        <div class="cmd-desc">Request a divorce from your spouse.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/emoji-chain</div>
+                        <div class="cmd-desc">Shows the current emoji chain status in the server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/hug</div>
+                        <div class="cmd-desc">Gives someone a warm hug.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/kachow</div>
+                        <div class="cmd-desc">Lightning McQueen! (Sends a quick GIF, sometimes a surprise)</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/love-meter</div>
+                        <div class="cmd-desc">Measures the love percentage between you and someone.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/marry</div>
+                        <div class="cmd-desc">Propose to someone!</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/pat</div>
+                        <div class="cmd-desc">Lets you show love/pat someone on the head.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/russian-roulette</div>
+                        <div class="cmd-desc">Challenge someone to a high-stakes Russian Roulette duel!</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/scratch</div>
+                        <div class="cmd-desc">Try your luck using the scratch card in your inventory.</div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="cmd-name">/slots</div>
+                        <div class="cmd-desc">Spin the slot machine!</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/war-devil</div>
+                        <div class="cmd-desc">Sends random gallery images from the War Devil collection.</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="commands-category">
+                <h2 class="category-title"><i class="fas fa-coins"></i> Economy & Money</h2>
+                <div class="command-list">
+
+                    <div class="command-item">
+                        <div class="cmd-name">/active-pets</div>
+                        <div class="cmd-desc">Select the gambling pets you want to activate (Dual-Wielding).</div>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="cmd-name">/case</div>
+                        <div class="cmd-desc">Opens money cases in your inventory.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/crime</div>
+                        <div class="cmd-desc">Commit a risky crime for high RC rewards. Careful, you might end up in
+                            jail!</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/daily</div>
+                        <div class="cmd-desc">Claim your daily salary.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/invest</div>
+                        <div class="cmd-desc">Lock your money for 7 days to earn 10% profit.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/jackpot</div>
+                        <div class="cmd-desc">View the current Global Jackpot pool and last winner.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/jail</div>
+                        <div class="cmd-desc">Check your current jail status and remaining sentence.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/market</div>
+                        <div class="cmd-desc">Buy items from the drawnot Market.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/pet</div>
+                        <div class="cmd-desc">Manage your pets.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/rich-list</div>
+                        <div class="cmd-desc">Lists the 10 richest members of the server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/send</div>
+                        <div class="cmd-desc">Send money to another user.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/tasks</div>
+                        <div class="cmd-desc">View your daily tasks and claim your rewards.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/use</div>
+                        <div class="cmd-desc">Use an item (Consumable/Pet Food) from your inventory.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/vip-market</div>
+                        <div class="cmd-desc">Exclusive cosmetic market for millionaire club members only.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/wallet</div>
+                        <div class="cmd-desc">Shows your current balance.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commands-category">
+                <h2 class="category-title"><i class="fas fa-compass"></i> General Utility</h2>
+                <div class="command-list">
+
+                    <div class="command-item">
+                        <div class="cmd-name">/avatar</div>
+                        <div class="cmd-desc">Whose avatar do you want to see?</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/botstats</div>
+                        <div class="cmd-desc">Displays technical statistics and health information about drawnot.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/case-info</div>
+                        <div class="cmd-desc">Provides information about case contents and reward probabilities.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/help</div>
+                        <div class="cmd-desc">Shows all bot commands and detailed system guide.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/intel</div>
+                        <div class="cmd-desc">Shows security and economy data about a user (or yourself).</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/inventory</div>
+                        <div class="cmd-desc">Shows the items in your inventory.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/leaderboard</div>
+                        <div class="cmd-desc">Lists the top 10 highest level members of the server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/level</div>
+                        <div class="cmd-desc">Shows your current level and XP status.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/member-count</div>
+                        <div class="cmd-desc">Shows the member statistics of this server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/msg-stats</div>
+                        <div class="cmd-desc">Shows general statistics of messages sent in the server within a specific
+                            timeframe.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/pet-help</div>
+                        <div class="cmd-desc">Provides detailed information about pet XP system and levels.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/photo-of-the-day</div>
+                        <div class="cmd-desc">Shows the featured photo of the day from Wikimedia.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/profile</div>
+                        <div class="cmd-desc">Show your premium profile or manage elite titles.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/random-fact</div>
+                        <div class="cmd-desc">Shows a random interesting fact from Wikipedia.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/server-info</div>
+                        <div class="cmd-desc">Shows detailed information about the server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/start</div>
+                        <div class="cmd-desc">Quick start guide for drawnot RPG and Economy System.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/starter-pack</div>
+                        <div class="cmd-desc">Directly claims the starter pack and sets up your groups (Attack/Defense).
+                        </div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/summon</div>
+                        <div class="cmd-desc">Summons someone to the channel you are in.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/top</div>
+                        <div class="cmd-desc">View the global leaderboard.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/top-voice</div>
+                        <div class="cmd-desc">Shows the ranking of members with the most time spent in voice channels.
+                        </div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/user-info</div>
+                        <div class="cmd-desc">Shows detailed information of a user in the server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/weather</div>
+                        <div class="cmd-desc">Shows the current weather for a specified city.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commands-category">
+                <h2 class="category-title"><i class="fas fa-shield-halved"></i> Moderation</h2>
+                <div class="command-list">
+
+                    <div class="command-item">
+                        <div class="cmd-name">/ban</div>
+                        <div class="cmd-desc">Bans a user from the server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/doom</div>
+                        <div class="cmd-desc">Completely clears and recreates the channel (Nuke).</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/kick</div>
+                        <div class="cmd-desc">Kicks a user from the server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/lock</div>
+                        <div class="cmd-desc">Locks the current channel, preventing members from sending messages.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/mute</div>
+                        <div class="cmd-desc">Mutes a user for a specified duration.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/powie</div>
+                        <div class="cmd-desc">Clears the specified amount of messages from the channel.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/settings-channel</div>
+                        <div class="cmd-desc">Configures server channels.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/confess-cooldown</div>
+                        <div class="cmd-desc">Sets the cooldown duration for the confession command.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/settings-reset</div>
+                        <div class="cmd-desc">Resets specific or all server settings.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/slowmode</div>
+                        <div class="cmd-desc">Sets the slowmode for the current channel.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/unban</div>
+                        <div class="cmd-desc">Unbans a user from the server.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/unlock</div>
+                        <div class="cmd-desc">Unlocks the current channel, allowing members to send messages again.
+                        </div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/unmute</div>
+                        <div class="cmd-desc">Removes timeout from a user.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/warn</div>
+                        <div class="cmd-desc">Issues a warning to a user.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/warnings</div>
+                        <div class="cmd-desc">View the warnings of a user.</div>
+                    </div>
+                    <div class="command-item">
+                        <div class="cmd-name">/warns-clear</div>
+                        <div class="cmd-desc">Clears all warnings for a user.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commands-category">
+                <h2 class="category-title"><i class="fas fa-music"></i> Music & Audio</h2>
+                <div class="command-list">
+
+
+                </div>
+            </div>
+
+            <div class="commands-category">
+                <h2 class="category-title"><i class="fas fa-sword"></i> Shadow City RPG</h2>
+                <div class="command-list">
+
+                    <div class="command-item">
+                        <div class="cmd-name">/city</div>
+                        <div class="cmd-desc">Enter the Shadow City (Level 5+).</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <a href="index.html" class="logo">DRAW<span>NOT</span></a>
+            <div class="copyright">
+                &copy; 2026 Drawnot Bot. Crafted with passion.
+            </div>
+            <div class="socials">
+                <a href="#" style="color: var(--text-muted); margin-left: 1rem;"><i class="fab fa-discord"></i></a>
+                <a href="#" style="color: var(--text-muted); margin-left: 1rem;"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
